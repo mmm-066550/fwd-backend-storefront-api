@@ -4,13 +4,16 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
-    "test": "npx tsc && jasmine",
     "dev": "nodemon ./src/server.ts",
-    "clean": "rimraf build/",
     "build": "yarn clean && npx tsc",
     "start": "npm run build && nodemon build/server.js",
-    "format": "prettier --write src/**/*.ts",
-    "lint": "eslint . --ext .ts"
+    "format:src": "prettier --write src/**/*.ts",
+    "format:build": "prettier --write build/**/*.js",
+    "lint": "eslint . --ext .ts",
+    "migrate:up": "db-migrate up",
+    "migrate:down": "db-migrate down",
+    "clean": "rimraf build/",
+    "test": "npx tsc && jasmine"
   },
   "repository": {
     "type": "git",
@@ -24,11 +27,16 @@
   },
   "homepage": "https://github.com/mmm-066550/fwd-backend-storefront-api#readme",
   "dependencies": {
+    "db-migrate": "^0.11.13",
+    "db-migrate-pg": "^1.2.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "helmet": "^5.0.2",
+    "http-status-codes": "^2.2.0",
     "jasmine": "^3.10.0",
     "jasmine-spec-reporter": "^7.0.0",
     "morgan": "^1.10.0",
+    "pg": "^8.7.3",
     "supertest": "^6.1.6"
   },
   "devDependencies": {
@@ -36,6 +44,7 @@
     "@types/jasmine": "^3.10.2",
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.12",
+    "@types/pg": "^8.6.5",
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
