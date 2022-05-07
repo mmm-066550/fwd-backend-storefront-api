@@ -1,0 +1,11 @@
+{
+  "defaultEnv": { "ENV": "NODE_ENV" },
+  "dev": {
+    "driver": "pg",
+    "host": { "ENV": "POSTGRESS_DB_HOST" },
+    "port": { "ENV": "POSTGRESS_DB_PORT" },
+    "database": { "ENV": "POSTGRESS_DB" },
+    "user": { "ENV": "POSTGRESS_DB_USER" },
+    "password": { "ENV": "POSTGRESS_DB_PASS" }
+  }
+}
