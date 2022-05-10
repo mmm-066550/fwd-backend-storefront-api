@@ -4,6 +4,7 @@ import morgan from 'morgan'
 import helmet from 'helmet'
 import dotenv from 'dotenv'
 import db from './database'
+import cors from 'cors'
 import apiRoute from './routes'
 
 // Configure NodeJS App Environment Variables
@@ -16,6 +17,7 @@ const app: Application = express()
 app.use(express.json())
 app.use(morgan('dev'))
 app.use(helmet())
+app.use(cors())
 
 // Server Routes
 app.use('/api', apiRoute)
@@ -30,9 +32,7 @@ app.listen(PORT, () => {
   // Connect To Postgres DB
   db.connect().then(async (client) => {
     try {
-      await client.query('SELECT NOW()').then(() => {
-        console.log('DB Connected')
-      })
+      console.log('DB Connected')
       client.release()
     } catch {
       client.release()

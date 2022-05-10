@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS "products"(
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(128) NOT NULL,
+    description TEXT,
+    quantity INTEGER NOT NULL,
+    price NUMERIC(11, 2) NOT NULL, 
+    added_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
