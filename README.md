@@ -44,8 +44,14 @@ Backend storefront API with Node.JS, Express.JS, TypeScript and PostgresSQL Data
 
 ### 3. DB Creation and Migrations
 
-`CREATE DATABASE %db_name%;`
-`npm run migrate:up`
+```
+CREATE DATABASE %db_name%;
+
+```
+
+```
+npm run migrate:up
+```
 
 <!-- ### 2. DB Creation and Migrations
 
