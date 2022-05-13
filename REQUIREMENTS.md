@@ -1,4 +1,4 @@
-## API endpoints
+<!-- ## API endpoints -->
 
 1. **Users Routes**
    <!-- Table Header -->
@@ -142,7 +142,7 @@
 
 </table>
 
-## Data Shapes
+<!-- ## Data Shapes
 
 1. **Users Table**
 
@@ -190,4 +190,4 @@ CREATE TABLE IF NOT EXISTS "order_products"(
     product_id BIGINT REFERENCES products(id) NOT NULL,
     quantity INTEGER NOT NULL
 );
-```
+``` -->
