@@ -104,125 +104,43 @@
 </tr>
 </table>
 
-<!-- <table>
-<tr>
-<td> GET </td><td>/products</td><td>-</td> <td> - </td> <td>Get all the available products</td>
-</tr>
+2. **Products Routes**
+   <!-- Table Header -->
+   <table>
+   <tr> 
+   <td>Request Type</td>
+   <td>Endpoint</td>
+   <td>Params</td>
+   <td>Request Body</td>
+   <td>Description</td>
+   <td>token*</td>
+   </tr>
 
+<!-- Create New Product Row -->
 <tr>
-<td> GET </td><td>/products/:id</td><td>product id</td> <td> - </td> <td> get product by it's id </td>
-</tr>
-
-<tr>
-<td> DELETE </td><td>/products/:id</td><td>product id</td> <td> - </td> <td> delete product by it's id</td>
-</tr>
-
-<tr>
-<td> POST </td><td>/products/create</td><td>-</td>
+<td>POST</td>
+<td>/api/products</td>
+<td>N/A</td>
 <td>
 
 ```json
 {
-  "name": "product_name",
-  "price": 13,
-  "category": "product_category"
-}
-```
-
-</td> <td> create a new product</td>
-</tr>
-
-<tr>
-<td> PUT </td><td>/products</td><td>-</td>
-<td>
-
-```json
-{
-  "id": 1,
-  "name": "another_name",
-  "price": 24,
-  "category": "another_category"
-}
-```
-
-</td> <td> update product by it's id</td>
-</tr>
-
-<tr>
-<td> GET </td><td>/products/:category</td><td>category</td> <td> - </td> <td> get products by category name</td>
-</tr>
-
-<tr>
-<td> GET </td><td>/products</td><td>-</td> <td> - </td> <td>get all available orders</td>
-</tr>
-
-<tr>
-<td> GET </td><td>/orders/:id</td><td>order id</td> <td> - </td> <td> get order by it's id</td>
-</tr>
-
-<tr>
-<td> DELETE </td><td>/order/:id</td><td>order id</td> <td> - </td> <td> delete order by it's id</td>
-</tr>
-
-<tr>
-<td> GET </td><td>/orders/users/current/:user_id</td><td>user id</td> <td> - </td> <td> get the current order for user by user id</td>
-</tr>
-
-<tr>
-<td> GET </td><td>/orders/users/open/:user_id</td><td>user id</td> <td> - </td> <td>get open orders for user by user is</td>
-</tr>
-
-<tr>
-<td>GET </td><td>/orders/users/closed/:user_id</td><td>user id</td><td>-</td><td>get closed orders for user by user id</td>
-</tr>
-
-<tr>
-<td>GET </td><td>/orders/users/:user_id</td><td>user id</td><td>-</td><td>get all orders for the user by it's it</td>
-</tr>
-
-<tr>
-<td>POST</td><td>/orders/create</td><td>-</td><td>
-
-```json
-{
-  "user_id": 1,
-  "status": "open"
+  "title": "product",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda error? Illum,
+  officiis nulla dicta, delectus non repellendus voluptatibus facere enim a veniam ut perferendis
+  fugiat magni quo error magnam?
+",
+  "quantity": 10,
+  "price": 99.99
 }
 ```
 
 </td>
-<td>create order for the user [user_id]</td>
-</tr>
-<tr>
-<td>PUT</td><td>/order/:id?status=</td><td>order id, status as query string</td><td>-</td><td>update order status for the user</td>
-</tr>
-<tr>
-
-<td>GET</td><td>/order-products/:orderId/products</td>order id </td> <td> - </td> <td>-</td><td>Get all products on an order by order it</td>
+<td>Create A New Product</td>
+<td>✅</td>
 </tr>
 
-<tr>
-<td>PUT</td><td>/orders-products/:orderId</td><td>order id</td>
-<td>
-
-```json
-{
-  "product_id": 1,
-  "order_id": 2,
-  "quantity": 12
-}
-```
-
-</td>
-<td> update an order </td>
-</tr>
-
-<>
-
-<td>DELETE </td><td>/order-products/:orderId/:productId</td><td>orderId, productId</td><td>-</td><td>DELETE product from specific order</td>
-
-</tr>
-</table> -->
+</table>
 
 ## Data Shapes
 
