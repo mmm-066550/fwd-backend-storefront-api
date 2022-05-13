@@ -5,6 +5,7 @@ type user = {
   last_name: string
   password: string
   created_at?: Date
+  msg?: string
 }
 
 export default user
