@@ -75,8 +75,6 @@ class Users {
       model.release()
       return result.rows[0]
     } catch (err) {
-      console.log(err)
-
       throw new Error(`Error on updating user with id: ${user.id}`)
     }
   }
@@ -87,7 +85,7 @@ class Users {
       const model = await db.connect()
       const result = await model.query(DeleteUserSQL, [id])
       model.release()
-      return result.rows[0]
+      return { ...result.rows[0], msg: 'User Deleted Successfully' }
     } catch (err) {
       throw new Error(`Error on delete user with id: ${id}`)
     }
