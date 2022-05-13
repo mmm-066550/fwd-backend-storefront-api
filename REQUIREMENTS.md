@@ -4,12 +4,19 @@
    <!-- Table Header -->
    <table>
    <tr> 
-   <td> Request Type </td> <td> Endpoint </td><td> Params </td><td>Request Body</td><td> Description </td> 
+   <td>Request Type</td>
+   <td>Endpoint</td>
+   <td>Params</td>
+   <td>Request Body</td>
+   <td>Description</td>
+   <td>Authentication Required</td>
    </tr>
 
 <!-- Create New User Row -->
 <tr>
-<td> POST </td><td>/api/users</td><td>N/A</td>
+<td>POST</td>
+<td>/api/users</td>
+<td>N/A</td>
 <td>
 
 ```json
@@ -21,12 +28,19 @@
 }
 ```
 
-</td> <td> Create A New User </td>
+</td>
+<td>Create A New User</td>
+<td>❌</td>
 </tr>
 
 <!-- Get All Users Row -->
 <tr>
-<td> GET </td><td>/api/users</td><td>N/A</td><td>N/A</td><td> Get All Users </td>
+<td>GET</td>
+<td>/api/users</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>Get All Users</td>
+<td>✅</td>
 </tr>
 
 <!-- Get Specific User By ID Row -->
