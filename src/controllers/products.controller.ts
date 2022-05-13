@@ -96,9 +96,10 @@ class productsController {
 
       // Check IF No Provided Info To Update
       if (!title && !description && !quantity && !quantity && !price) {
-        return res
-          .status(StatusCodes.BAD_REQUEST)
-          .json({ status: 'BAD_REQUEST', message: 'Please provide fields that you need to update' })
+        return res.status(StatusCodes.BAD_REQUEST).json({
+          status: 'BAD_REQUEST',
+          message: 'Please provide fields that you need to update the product'
+        })
       } else {
         const product = await productsModel.updateProduct(productSpecs)
         // Rerurn Results
@@ -134,7 +135,7 @@ class productsController {
       } else {
         return res.status(StatusCodes.BAD_REQUEST).json({
           status: 'BAD_REQUEST',
-          message: `Error on delete the product with the ID: ${id}, May be no user found with this ID`
+          message: `Error on delete the product with the ID: ${id}, May be no product found with this ID`
         })
       }
     } catch (err) {

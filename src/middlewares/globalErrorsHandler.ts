@@ -10,10 +10,10 @@ interface Error {
 }
 
 // A Function To Handle Errors Globally
-const globalErrorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
+const globalErrorHandler = (err: Error, _: Request, res: Response, next: NextFunction) => {
   const status = err.status || StatusCode.INTERNAL_SERVER_ERROR
-  const message = err.status || 'internal server error (500)'
-  res.status(status).json({ status: 'error', message })
+  const message = err.message || 'internal server error (500)'
+  res.status(status).json({ status: 'ERROR', message })
   next()
 }
 export default globalErrorHandler

@@ -27,6 +27,7 @@ app.use(globalErrorHandler)
 
 // Listen To Api Express Server
 const PORT = process.env.EXPRESS_PORT || 3000
+
 app.listen(PORT, () => {
   console.log(`Server started on port: ${PORT}`)
   // Connect To Postgres DB

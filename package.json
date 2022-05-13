@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
-    "build": "yarn clean && npx tsc",
+    "build": "npm run clean && npx tsc",
     "start": "npm run build && nodemon build/server.js",
     "format:src": "prettier --write src/**/*.ts",
     "format:build": "prettier --write build/**/*.js",
