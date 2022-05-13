@@ -6,7 +6,19 @@
 <td> Request Type </td> <td> Endpoint </td><td> Params </td><td>Request Body</td><td> Description </td> 
 </tr>
 <tr>
-<td> GET </td><td>/users</td><td>-</td><td> - </td> <td> show all the available users </td>
+<td> POST </td><td>/api/users</td><td>N/A</td>
+<td>
+
+```json
+{
+  "email": "mmm066550@gmail.com",
+  "first_name": "Moustapha",
+  "last_name": "Mahmoud",
+  "password": "testPassword123"
+}
+```
+
+</td> <td> Create A New User </td>
 </tr>
 <tr>
 <td> GET </td><td>/users/:id</td><td>user id</td> <td> - </td> <td> get user by his id </td>
@@ -19,12 +31,7 @@
 <td>
 
 ```json
-{
-  "firstname": "yousef",
-  "lastname": "meska",
-  "password": "0000",
-  "email": "test@test.com"
-}
+{}
 ```
 
 </td>
