@@ -1,11 +1,13 @@
 ## API endpoints
 
 1. **Users Routes**
-<table>
-<tr> 
-<td> Request Type </td> <td> Endpoint </td><td> Params </td><td>Request Body</td><td> Description </td> 
-</tr>
+   <!-- Table Header -->
+   <table>
+   <tr> 
+   <td> Request Type </td> <td> Endpoint </td><td> Params </td><td>Request Body</td><td> Description </td> 
+   </tr>
 
+<!-- Create New User Row -->
 <tr>
 <td> POST </td><td>/api/users</td><td>N/A</td>
 <td>
@@ -22,53 +24,53 @@
 </td> <td> Create A New User </td>
 </tr>
 
+<!-- Get All Users Row -->
 <tr>
 <td> GET </td><td>/api/users</td><td>N/A</td><td>N/A</td><td> Get All Users </td>
 </tr>
 
+<!-- Get Specific User By ID Row -->
 <tr>
-<td> DELETE </td><td>/users/:id</td><td>user id</td><td> - </td> <td> delete user by his id </td>
+<td> GET </td><td>/api/users/:user_id</td><td>user_id</td><td>N/A</td><td> Get User By ID </td>
 </tr>
-<tr>
-<td> PUT </td><td>/users/:id</td><td>user id</td>
-<td>
 
-```json
-{}
-```
-
-</td>
-<td> delete user by his id </td>
-</tr>
+<!-- Update User Row -->
 <tr>
-<td> POST </td><td>/users/signup</td><td>-</td>
+<td> PATCH </td><td>/api/users/:user_id</td><td>user_id</td>
 <td>
 
 ```json
 {
-  "firstname": "yousef",
-  "lastname": "meska",
-  "password": "0000",
-  "email": "test@test.com"
+  "email": "mmm066550@gmail.com",
+  "first_name": "Moustapha",
+  "last_name": "Mahmoud",
+  "password": "testPassword123"
 }
 ```
 
 </td>
-<td> create/signup user</td>
+<td> Update User Information </td>
 </tr>
 
+<!-- Delete User Row -->
 <tr>
-<td> POST </td><td>/users/login</td><td></td>
+<td> DELETE </td><td>/api/users/:user_id</td><td>user_id</td><td>N/A</td>
+<td> Delete User From DB</td>
+</tr>
+
+<!-- Auth Row -->
+<tr>
+<td> POST </td><td>/api/users/auth</td><td>N/A</td>
 <td>
 
 ```json
 {
-  "email": "test@test.com",
-  "password": "0000"
+  "email": "mmm066550@gmail.com",
+  "password": "testPassword123"
 }
 ```
 
- </td> <td>login/authenticate user</td>
+ </td> <td>Login/Authenticate User</td>
 </tr>
 </table>
 
