@@ -5,6 +5,7 @@
 <tr> 
 <td> Request Type </td> <td> Endpoint </td><td> Params </td><td>Request Body</td><td> Description </td> 
 </tr>
+
 <tr>
 <td> POST </td><td>/api/users</td><td>N/A</td>
 <td>
@@ -20,9 +21,11 @@
 
 </td> <td> Create A New User </td>
 </tr>
+
 <tr>
-<td> GET </td><td>/users/:id</td><td>user id</td> <td> - </td> <td> get user by his id </td>
+<td> GET </td><td>/api/users</td><td>N/A</td><td>N/A</td><td> Get All Users </td>
 </tr>
+
 <tr>
 <td> DELETE </td><td>/users/:id</td><td>user id</td><td> - </td> <td> delete user by his id </td>
 </tr>
