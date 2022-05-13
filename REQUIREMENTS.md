@@ -9,7 +9,7 @@
    <td>Params</td>
    <td>Request Body</td>
    <td>Description</td>
-   <td>Authentication Required</td>
+   <td>token*</td>
    </tr>
 
 <!-- Create New User Row -->
