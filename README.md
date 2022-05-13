@@ -36,6 +36,7 @@ EXPRESS_PORT=
 NODE_ENV=
 POSTGRESS_DB_HOST=
 POSTGRESS_DB=
+POSTGRESS_DB_TEST=
 POSTGRESS_DB_PORT=
 POSTGRESS_DB_USER=
 POSTGRESS_DB_PASS=
@@ -46,7 +47,7 @@ JWT_SECRET=
 
 ### 3. DB Creation and Migrations
 
-PostgresSQL Database uses port `5432` Make sure it's available
+PostgresSQL Database runs on port `5432` So make sure it's available
 
 ```
 CREATE DATABASE %db_name%;

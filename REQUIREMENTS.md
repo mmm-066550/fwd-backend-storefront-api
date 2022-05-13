@@ -146,7 +146,7 @@
 <td>N/A</td>
 <td>N/A</td>
 <td>Get All Products</td>
-<td>✅</td>
+<td>❌</td>
 </tr>
 
 <!-- Get Specific Product By ID Row -->
@@ -156,7 +156,7 @@
 <td>product_id</td>
 <td>N/A</td>
 <td>Get Product By ID</td>
-<td>✅</td>
+<td>❌</td>
 </tr>
 
 <!-- Update Product Row -->
