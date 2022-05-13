@@ -127,7 +127,7 @@
 
 ```json
 {
-  "title": "product",
+  "title": "product_title",
   "description": "Lorem ipsum dolor sit amet.",
   "quantity": 10,
   "price": 99.99
@@ -136,6 +136,57 @@
 
 </td>
 <td>Create A New Product</td>
+<td>✅</td>
+</tr>
+
+<!-- Get All Products Row -->
+<tr>
+<td>GET</td>
+<td>/api/products</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>Get All Products</td>
+<td>✅</td>
+</tr>
+
+<!-- Get Specific Product By ID Row -->
+<tr>
+<td>GET</td>
+<td>/api/products/:product_id</td>
+<td>product_id</td>
+<td>N/A</td>
+<td>Get Product By ID</td>
+<td>✅</td>
+</tr>
+
+<!-- Update Product Row -->
+<tr>
+<td>PATCH</td>
+<td>/api/products/:product_id</td>
+<td>product_id</td>
+<td>
+
+```json
+{
+  "title": "changer_product_title",
+  "description": "Lorem ipsum dolor sit amet.",
+  "quantity": 5,
+  "price": 50.35
+}
+```
+
+</td>
+<td>Update Product Information</td>
+<td>✅</td>
+</tr>
+
+<!-- Delete Product Row -->
+<tr>
+<td>DELETE</td>
+<td>/api/products/:product_id</td>
+<td>product_id</td>
+<td>N/A</td>
+<td>Delete Product From DB</td>
 <td>✅</td>
 </tr>
 
