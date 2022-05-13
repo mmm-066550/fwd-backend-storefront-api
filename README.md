@@ -44,6 +44,9 @@ Backend storefront API with Node.JS, Express.JS, TypeScript and PostgresSQL Data
 
 ### 3. DB Creation and Migrations
 
+`CREATE DATABASE %db_name%;`
+`npm run migrate:up`
+
 <!-- ### 2. DB Creation and Migrations
 
 Now that you have the structure of the databse outlined, it is time to create the database and migrations. Add the npm packages dotenv and db-migrate that we used in the course and setup your Postgres database. If you get stuck, you can always revisit the database lesson for a reminder.
