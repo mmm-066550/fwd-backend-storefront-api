@@ -128,8 +128,7 @@
 ```json
 {
   "title": "product",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda error? Illum.
-",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   "quantity": 10,
   "price": 99.99
 }
