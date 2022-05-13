@@ -45,12 +45,19 @@
 
 <!-- Get Specific User By ID Row -->
 <tr>
-<td> GET </td><td>/api/users/:user_id</td><td>user_id</td><td>N/A</td><td> Get User By ID </td>
+<td>GET</td>
+<td>/api/users/:user_id</td>
+<td>user_id</td>
+<td>N/A</td>
+<td>Get User By ID</td>
+<td>✅</td>
 </tr>
 
 <!-- Update User Row -->
 <tr>
-<td> PATCH </td><td>/api/users/:user_id</td><td>user_id</td>
+<td>PATCH</td>
+<td>/api/users/:user_id</td>
+<td>user_id</td>
 <td>
 
 ```json
@@ -63,18 +70,25 @@
 ```
 
 </td>
-<td> Update User Information </td>
+<td>Update User Information</td>
+<td>✅</td>
 </tr>
 
 <!-- Delete User Row -->
 <tr>
-<td> DELETE </td><td>/api/users/:user_id</td><td>user_id</td><td>N/A</td>
-<td> Delete User From DB</td>
+<td>DELETE</td>
+<td>/api/users/:user_id</td>
+<td>user_id</td>
+<td>N/A</td>
+<td>Delete User From DB</td>
+<td>✅</td>
 </tr>
 
 <!-- Auth Row -->
 <tr>
-<td> POST </td><td>/api/users/auth</td><td>N/A</td>
+<td>POST</td>
+<td>/api/users/auth</td>
+<td>N/A</td>
 <td>
 
 ```json
@@ -84,7 +98,9 @@
 }
 ```
 
- </td> <td>Login/Authenticate User</td>
+</td>
+<td>Login/Authenticate User</td>
+<td>❌</td>
 </tr>
 </table>
 
