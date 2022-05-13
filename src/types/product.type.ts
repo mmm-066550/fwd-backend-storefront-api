@@ -3,7 +3,7 @@ type product = {
   title: string
   description: string
   quantity: number
-  price: number
+  price: number | string
   added_at?: Date
 }
 
