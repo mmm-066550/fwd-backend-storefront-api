@@ -1,4 +1,4 @@
-<!-- ## API endpoints -->
+## API endpoints
 
 **Users Routes**
 
@@ -128,7 +128,7 @@
 ```json
 {
   "title": "product",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "description": "Lorem ipsum dolor sit amet.",
   "quantity": 10,
   "price": 99.99
 }
@@ -141,9 +141,9 @@
 
 </table>
 
-<!-- ## Data Shapes
+## Data Shapes
 
-1. **Users Table**
+**Users Table**
 
 ```sql
 CREATE TABLE IF NOT EXISTS "users"(
@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS "users"(
 );
 ```
 
-2. **Products Table**
+**Products Table**
 
 ```sql
 CREATE TABLE IF NOT EXISTS "products"(
@@ -169,7 +169,7 @@ CREATE TABLE IF NOT EXISTS "products"(
 );
 ```
 
-3. **Orders Table**
+**Orders Table**
 
 ```sql
 CREATE TABLE IF NOT EXISTS "orders"(
@@ -180,7 +180,7 @@ CREATE TABLE IF NOT EXISTS "orders"(
 );
 ```
 
-4. **Order_Products Table**
+**Order_Products Table**
 
 ```sql
 CREATE TABLE IF NOT EXISTS "order_products"(
@@ -189,4 +189,4 @@ CREATE TABLE IF NOT EXISTS "order_products"(
     product_id BIGINT REFERENCES products(id) NOT NULL,
     quantity INTEGER NOT NULL
 );
-``` -->
+```
