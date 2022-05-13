@@ -2,7 +2,8 @@
 
 <table>
 <tr> 
-<td> Request Type </td> <td> Endpoint </td><td> Params </td><td>Request Body</td><td> Description <td> </tr>
+<td> Request Type </td> <td> Endpoint </td><td> Params </td><td>Request Body</td><td> Description </td>
+</tr>
 
 </table>
 
