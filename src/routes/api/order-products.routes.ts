@@ -8,7 +8,7 @@ const route = Router()
 // Create A New Order Products Router [POST:'api/order-products']
 route.post('/', routeAuthGuard, opController.createNewOrderProduct)
 
-// Get All Orders Router [GET:'api/order-products/:id/products']
+// Get All Order Products Router [GET:'api/order-products/:id/products']
 route.get('/:id/products', routeAuthGuard, opController.getAllOrderProducts)
 
 // Get Product Of An Order By Order ID Router [GET:'api/order-products/:id/products/:product_id']

@@ -275,6 +275,91 @@
 
 </table>
 
+**Order Products Routes**
+
+   <!-- Table Header -->
+   <table>
+   <tr> 
+   <td>Request Type</td>
+   <td>Endpoint</td>
+   <td>Params</td>
+   <td>Request Body</td>
+   <td>Description</td>
+   <td>token*</td>
+   </tr>
+
+<!-- Create New Order Product Row -->
+<tr>
+<td>POST</td>
+<td>/api/order-products</td>
+<td>N/A</td>
+<td>
+
+```json
+{
+  "order_id": "1",
+  "product_id": "1",
+  "quantity": "1"
+}
+```
+
+</td>
+<td>Add A New Order Product</td>
+<td>✅</td>
+</tr>
+
+<!-- Get All Order Products Row -->
+<tr>
+<td>GET</td>
+<td>/api/order-products/:id/products</td>
+<td>id</td>
+<td>N/A</td>
+<td>Get All Order Products</td>
+<td>✅</td>
+</tr>
+
+<!-- Get Specific Order Product By ID Row -->
+<tr>
+<td>GET</td>
+<td>/api/order-products/:id/products/:product_id</td>
+<td>id,product_id</td>
+<td>N/A</td>
+<td>Get Order Product By ID</td>
+<td>✅</td>
+</tr>
+
+<!-- Update Order Product Row -->
+<tr>
+<td>PATCH</td>
+<td>/api/order-products/:id/products/:product_id</td>
+<td>id,product_id</td>
+<td>
+
+```json
+{
+  "order_id": "2",
+  "product_id": "2",
+  "quantity": "2"
+}
+```
+
+</td>
+<td>Update Order Product Information</td>
+<td>✅</td>
+</tr>
+
+<!-- Delete Order Product Row -->
+<tr>
+<td>DELETE</td>
+<td>/api/order-products/:id/products/:product_id</td>
+<td>id,product_id</td>
+<td>N/A</td>
+<td>Delete Order Product</td>
+<td>✅</td>
+</tr>
+
+</table>
+
 ## Data Shapes
 
 **Users Table**
