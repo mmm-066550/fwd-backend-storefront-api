@@ -31,7 +31,18 @@ Backend storefront API with Node.JS, Express.JS, TypeScript and PostgresSQL Data
 
 ### 2. Create .env configuration file and fill it
 
-` EXPRESS_PORT=` `NODE_ENV=` `POSTGRESS_DB_HOST=` `POSTGRESS_DB=` `POSTGRESS_DB_PORT=` `POSTGRESS_DB_USER=` `POSTGRESS_DB_PASS=` `BCRYPT_SALT=` `BCRYPT_SECRET=` `JWT_SECRET=`
+`EXPRESS_PORT=`
+`NODE_ENV=`
+`POSTGRESS_DB_HOST=`
+`POSTGRESS_DB=`
+`POSTGRESS_DB_PORT=`
+`POSTGRESS_DB_USER=`
+`POSTGRESS_DB_PASS=`
+`BCRYPT_SALT=`
+`BCRYPT_SECRET=`
+`JWT_SECRET=`
+
+### 3. DB Creation and Migrations
 
 <!-- ### 2. DB Creation and Migrations
 
