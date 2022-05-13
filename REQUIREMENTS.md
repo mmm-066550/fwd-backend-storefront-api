@@ -192,6 +192,89 @@
 
 </table>
 
+**Orders Routes**
+
+   <!-- Table Header -->
+   <table>
+   <tr> 
+   <td>Request Type</td>
+   <td>Endpoint</td>
+   <td>Params</td>
+   <td>Request Body</td>
+   <td>Description</td>
+   <td>token*</td>
+   </tr>
+
+<!-- Create New Order Row -->
+<tr>
+<td>POST</td>
+<td>/api/orders</td>
+<td>N/A</td>
+<td>
+
+```json
+{
+  "status": "pending",
+  "user_id": 1
+}
+```
+
+</td>
+<td>Create A New Order</td>
+<td>✅</td>
+</tr>
+
+<!-- Get All Orders Row -->
+<tr>
+<td>GET</td>
+<td>/api/orders</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>Get All Orders</td>
+<td>✅</td>
+</tr>
+
+<!-- Get Specific Order By ID Row -->
+<tr>
+<td>GET</td>
+<td>/api/orders/:order_id</td>
+<td>order_id</td>
+<td>N/A</td>
+<td>Get Order By ID</td>
+<td>✅</td>
+</tr>
+
+<!-- Update Order Row -->
+<tr>
+<td>PATCH</td>
+<td>/api/orders/:order_id</td>
+<td>order_id</td>
+<td>
+
+```json
+{
+  "status": "completed",
+  "user_id": 1
+}
+```
+
+</td>
+<td>Update Order Information</td>
+<td>✅</td>
+</tr>
+
+<!-- Delete Order Row -->
+<tr>
+<td>DELETE</td>
+<td>/api/orders/:order_id</td>
+<td>order_id</td>
+<td>N/A</td>
+<td>Delete Order From DB</td>
+<td>✅</td>
+</tr>
+
+</table>
+
 ## Data Shapes
 
 **Users Table**
