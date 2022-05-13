@@ -181,6 +181,8 @@
 
 1. **Users Table**
 
+<!-- Users Table Migrate UP -->
+
 ```sql
 CREATE TABLE IF NOT EXISTS "users"(
     id SERIAL PRIMARY KEY,
