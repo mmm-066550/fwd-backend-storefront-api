@@ -1,6 +1,7 @@
 <!-- ## API endpoints -->
 
-1. **Users Routes**
+**Users Routes**
+
    <!-- Table Header -->
    <table>
    <tr> 
@@ -104,7 +105,8 @@
 </tr>
 </table>
 
-2. **Products Routes**
+**Products Routes**
+
    <!-- Table Header -->
    <table>
    <tr> 
