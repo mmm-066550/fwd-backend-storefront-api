@@ -67,3 +67,16 @@ npm start
 ```
 
 ### The server will start on port: the user environment port, or the default host is on: http://localhost:3000.
+
+## NPM-run Scripts
+
+- `dev`: `nodemon ./src/server.ts`,
+- `build`: `npm run clean && npx tsc`,
+- `start`: `npm run build && nodemon build/server.js`,
+- `format:src`: `prettier --write src/\*_/_.ts`,
+- `format:build`: `prettier --write build/\*_/_.js`,
+- `lint`: `eslint . --ext .ts`,
+- `migrate:up`: `db-migrate up`,
+- `migrate:down`: `db-migrate down`,
+- `clean`: `rimraf build/`,
+- `test`: `npx tsc && jasmine`
