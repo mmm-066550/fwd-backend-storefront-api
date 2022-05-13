@@ -9,10 +9,10 @@ const route = Router()
 route.post('/', routeAuthGuard, productsController.createNewUser)
 
 // Get All Products Router [GET:'api/products']
-route.get('/', routeAuthGuard, productsController.getAllProducts)
+route.get('/', productsController.getAllProducts)
 
 // Get Product By ID Router [GET:'api/products/:product_id']
-route.get('/:product_id', routeAuthGuard, productsController.getProductByID)
+route.get('/:product_id', productsController.getProductByID)
 
 // Update Product Router [PATCH:'api/products/:product_id']
 route.patch('/:product_id', routeAuthGuard, productsController.updateProduct)

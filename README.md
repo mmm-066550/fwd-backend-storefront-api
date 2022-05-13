@@ -46,6 +46,8 @@ JWT_SECRET=
 
 ### 3. DB Creation and Migrations
 
+PostgresSQL Database uses port `5432` Make sure it's available
+
 ```
 CREATE DATABASE %db_name%;
 ```
