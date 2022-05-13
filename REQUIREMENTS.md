@@ -128,9 +128,7 @@
 ```json
 {
   "title": "product",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda error? Illum,
-  officiis nulla dicta, delectus non repellendus voluptatibus facere enim a veniam ut perferendis
-  fugiat magni quo error magnam?
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda error? Illum.
 ",
   "quantity": 10,
   "price": 99.99
