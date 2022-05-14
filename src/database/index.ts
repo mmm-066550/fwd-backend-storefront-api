@@ -15,7 +15,7 @@ const {
 } = process.env
 
 let DB
-if (process.env.NODE_EVN === 'dev') {
+if (process.env.NODE_EVN === 'dev' || process.env.NODE_EVN === 'development') {
   DB = POSTGRESS_DB_TEST
 } else {
   DB = POSTGRESS_DB
