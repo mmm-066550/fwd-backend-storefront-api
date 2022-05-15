@@ -51,6 +51,7 @@ PostgresSQL Database runs on port `5432` So make sure it's available
 
 ```
 CREATE DATABASE %db_name%;
+CREATE DATABASE %test_db_name%;
 ```
 
 ```
@@ -73,13 +74,13 @@ npm start
 
 ## NPM-run Scripts
 
-- `dev`: `nodemon ./src/server.ts`,
-- `build`: `npm run clean && npx tsc`,
-- `start`: `npm run build && nodemon build/server.js`,
-- `format:src`: `prettier --write src/\*_/_.ts`,
-- `format:build`: `prettier --write build/\*_/_.js`,
-- `lint`: `eslint . --ext .ts`,
-- `migrate:up`: `db-migrate up`,
-- `migrate:down`: `db-migrate down`,
-- `clean`: `rimraf build/`,
-- `test`: `npx tsc && jasmine`
+- 'dev': 'nodemon ./src/server.ts'
+- 'build': 'npm run clean && npx tsc'
+- 'start': 'npm run build && nodemon build/server.js'
+- 'format:src': 'prettier --write src/\*_/_.ts'
+- 'format:build': 'prettier --write build/\*_/_.js'
+- 'lint': 'eslint . --ext .ts'
+- 'migrate:up': 'db-migrate up'
+- 'migrate:down': 'db-migrate down'
+- 'clean': 'rimraf build/'
+- 'test': 'set NODE_ENV=test && db-migrate up --config ./database.json -e test && npx tsc && jasmine && db-migrate down --config ./database.json -e test'
