@@ -13,7 +13,7 @@
     "migrate:up": "db-migrate up",
     "migrate:down": "db-migrate down",
     "clean": "rimraf build/",
-    "test": "set NODE_ENV=test && db-migrate up --config ./database.json -e test && npx tsc && jasmine && db-migrate down --config ./database.json -e test"
+    "test": "set NODE_ENV=test && db-migrate --env test up && npx tsc && jasmine && db-migrate --env test down"
   },
   "repository": {
     "type": "git",

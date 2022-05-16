@@ -14,17 +14,10 @@ const {
   POSTGRESS_DB_PASS
 } = process.env
 
-let DB
-if (process.env.NODE_EVN === 'test') {
-  DB = POSTGRESS_DB_TEST
-} else {
-  DB = POSTGRESS_DB
-}
-
 // Create Postgres DB Pool Instance
 const pool = new Pool({
   host: POSTGRESS_DB_HOST,
-  database: DB,
+  database: process.env.NODE_ENV === 'development' ? POSTGRESS_DB : POSTGRESS_DB_TEST,
   user: POSTGRESS_DB_USER,
   password: POSTGRESS_DB_PASS,
   port: POSTGRESS_DB_PORT as unknown as number
